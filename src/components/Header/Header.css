@@ -1,0 +1,138 @@
+.header {
+  padding: 0 70px;
+  min-height: 74px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.header__button-container {
+  margin-left: auto;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.header__right-container {
+  display: flex;
+  gap: 50px; /* Добавить это свойство для создания расстояния между элементами */
+  margin-left: auto; /* Добавить это свойство для выравнивания элемента вправо */
+}
+
+.header__button-container_films {
+  display: flex;
+  gap: 16px;
+}
+
+.header__button {
+  min-height: 32px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+  text-decoration: none;
+  transition: opacity 0.4s;
+}
+
+.header__button:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.header__button-black {
+  color: #fff;
+  background-color: #000000;
+  min-width: 76px;
+  border-radius: 3px;
+}
+
+.header__account-button {
+  width: 100px;
+  height: 32px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+  text-decoration: none;
+  background: #F9F9F9;
+  border-radius: 40px;
+  transition: opacity 0.4s;
+}
+
+.header__account-button:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.header__menu-button {
+  background-color: #ffffff;
+  border: none;
+  width: 44px;
+  height: 44px;
+  display: none;
+}
+
+.header__menu-button:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+
+.header__menu-button {
+  background-color: #ffffff;
+  border: none;
+  width: 44px;
+  height: 44px;
+  display: none;
+}
+
+.header__menu-button:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+@media screen and (max-width: 1023px) {
+  .header {
+    padding: 0 30px;
+  }
+
+  .header__button-container_films {
+    display: none;
+  }
+
+  .header__account-button {
+    display: none;
+  }
+
+  .header__menu-button {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .header {
+    padding: 0 14px;
+  }
+
+  .header__button-container {
+    gap: 14px;
+  }
+
+  .header__button {
+    min-height: 26px;
+    font-size: 10px;
+    line-height: 16px;
+  }
+
+  .header__button-black {
+    min-width: 54px;
+  }
+}
